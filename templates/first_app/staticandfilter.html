@@ -1,0 +1,20 @@
+<!DOCTYPE html> {% load staticfiles %}{% load my_extras %}
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link href='{% static "css/mystyle.css" %}' rel="stylesheet">
+    <title>First App</title>
+</head>
+
+<body>
+    <h1>Hello this is index1.html</h1>
+    <h3>{{ insert_me }}</h3>
+    <h3>{{ text }} - {{ text|upper }} - {{ text|cut:'Hello' }} - {{ text|cut_and_add:'Hello' }}</h3>
+    <h3>{{ number|add:"99" }}</h3>
+    <br>
+    <img src='{% static "images/django.jpg" %}' alt="Image Missing">
+</body>
+
+</html>

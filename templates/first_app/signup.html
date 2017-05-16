@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Please sign up here!</h1>
+        <form method="post">
+            {{form.as_p}} {% csrf_token %}
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>

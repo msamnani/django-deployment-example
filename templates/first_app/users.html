@@ -1,0 +1,36 @@
+<!DOCTYPE html> {% load staticfiles %}
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link href='{% static "css/mystyle.css" %}' rel="stylesheet">
+    <title>First App</title>
+</head>
+
+<body>
+    <h2>Here are your access records:</h2>
+
+    <div class="djangtwo">
+        {% if users %}
+        <table>
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </thead>
+            {% for user in users %}
+            <tr>
+                <td>{{ user.first_name }}</td>
+                <td>{{ user.last_name }}</td>
+                <td>{{ user.email }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>NO USER RECORDS FOUND</p>
+        {% endif %}
+    </div>
+</body>
+
+</html>

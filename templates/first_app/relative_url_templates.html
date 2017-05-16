@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Other page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Welcome to Relative_url_templates!</h1><br>
+            <a href="{% url 'first_app:other' %}">OTHER PAGE</a><br>
+            <a href="{% url 'admin:index' %}">ADMIN PAGE</a><br>
+            <a href="{% url 'index' %}">Back to HOME PAGE</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
